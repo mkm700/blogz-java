@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head th:replace="template :: header">
+	</head>
+	<body>
+		<nav th:replace="template :: navigation"></nav>
+			<h1>Blogz User List</h1>
+			<ul th:each="user : ${users}">
+				<li><a href=test.html" th:href="/blog/${ user.username }">username</a></li>
+			</ul>
+
+	</body>
+</html>
